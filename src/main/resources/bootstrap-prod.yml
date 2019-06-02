@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    config:
+      uri: http://10.0.2.27:8888
+      name: itoken-client-eureka, itoken-client-zipkin, itoken-client-admin, itoken-service-upload
+      label: master
+      profile: prod
+
+
+fastdfs.base.url: http://10.0.2.27:8889/
+
+storage:
+  type: fastdfs
+  fastdfs:
+    tracker_server: 10.0.2.27:22122
